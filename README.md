@@ -2,10 +2,10 @@
 <img src="hilbert_curve_animation/animation_gifs/header.png" />
 
 The Hilbert curve, as a space-filling curve (SFC), is a fascinating mathematical object.  
-Since Cantor, we know that the unit interval \([0,1]\) in \(\mathbb{R}\) has the same cardinality as the unit square \([0,1]^2\) in \(\mathbb{R}^2\).  
+Since Cantor, we know that the unit interval $[0,1]$ in $\mathbb{R}$ has the same cardinality as the unit square $[0,1]^2$ in $\mathbb{R}^2$.  
 This led mathematicians to wonder whether a continuous bijection between these intervals is possible.  
 Today, thanks to E. Netto, we know that such a continuous bijection does **not** exist, but a continuous surjection does.  
-This discovery led to the creation of space-filling curves like the Hilbert curve — a curve that passes through every point in \([0,1]^2\).  
+This discovery led to the creation of space-filling curves like the Hilbert curve — a curve that passes through every point in $([0,1]^2$.  
 More than 100 years after Hilbert defined the curve, John Skilling found a very elegant algorithm for computing the coordinates of the Hilbert curve given so-called Hilbert indices (1, 2, 3, …), and also for retrieving Hilbert indices from coordinates on the curve.
 
 ## Computation of the Hilbert Curve
