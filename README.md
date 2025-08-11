@@ -1,4 +1,5 @@
 # Hilbert Curve – Computation, Visualization, and Animation of John Skilling’s Algorithm
+<img src="hilbert_curve_animation/animation_gifs/header.png" />
 
 The Hilbert curve, as a space-filling curve (SFC), is a fascinating mathematical object.  
 Since Cantor, we know that the unit interval \([0,1]\) in \(\mathbb{R}\) has the same cardinality as the unit square \([0,1]^2\) in \(\mathbb{R}^2\).  
