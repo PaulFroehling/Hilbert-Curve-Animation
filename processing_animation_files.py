@@ -3,10 +3,10 @@ Creates files that are used by the processing sketch for animating the creation 
 
 Command-line arguments
 ----------------------
---create-animation-files' : bool
+--create-animation-files : bool
     Set true to create animation files based on -dims and -bits
     
---delete-animation-files' : bool
+--delete-animation-files : bool
     Deletes all currently stored animation files
 -dims : int
     Dimensionality of the Hilbert curve (2 or 3).
@@ -21,20 +21,29 @@ from skillings_implementation.export_utils import clear_intermediate_result_fold
 
 
 def create_lists_for_animation(args):
+    '''
+    Creates lists of intermediate results of the Hilbert curve. 
+    If hc_decode() is called with save_intermediate_results = True, animation files are created in the folder "skillings_intermediate_results".
+    Args:
+        - args(argparse.Namespace): Arguments relevant for the plot
+    Returns:
+        None    
+    '''
     clear_intermediate_result_folder()
     points = []
     n_points = (2**args.bits)**args.dims
     for i in range(0, n_points):
-        points.append(hc_decode([i],n_dims=args.dims, n_bits=args.bits, save_intermediate_results=True))
+        points.append(hc_decode([i],n_dims=args.dims, n_bits=args.bits, save_intermediate_results=True)) 
 
 
 def get_inputs():
     '''
     Reads input variables after script is called from "main"
     Args:
-        - args:list: Arguments relevant for the plot
+        -
     Returns:
-        None    
+        - args(argparse.Namespace): Dict of input arguments
+  
     '''
     parser = argparse.ArgumentParser()
     parser.add_argument('--create-animation-files', dest = 'create_animation_files', type=bool)

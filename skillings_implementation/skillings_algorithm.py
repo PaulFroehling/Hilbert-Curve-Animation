@@ -7,7 +7,7 @@ I used this repo to understand the algorithm and this worked best for me by codi
 
 import numpy as np
 from .export_utils import save_intermediate_points
-from .binary_utils import hilbert_to_gray, bin_to_dec, dec_tuples_to_binary, gray_to_binary
+from .binary_utils import hilbert_to_gray, bin_to_dec, dec_tuples_to_binary
 
 
 
